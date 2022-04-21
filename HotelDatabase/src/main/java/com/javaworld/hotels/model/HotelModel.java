@@ -17,29 +17,32 @@ import java.util.List;
 import com.javaworld.hotels.businessobjects.Hotel;
 
 /**
- * Une classe simple proposant quelques services pour la base de données
+ * Une classe simple proposant quelques services pour la base de donnï¿½es
  * d'hotels.
  * @author jfsmart
  */
 public class HotelModel {
 
     /**
-     * La liste de toutes les villes connues dans la base de données.
+     * La liste de toutes les villes connues dans la base de donnï¿½es.
      */
-    private static String[] villes = { "Paris", "Londres" };
+    private static String[] villes = { "Paris", "Londres", "Tokyo", "New-York" };
 
     /**
-     * La liste de tous les hotels de la base de données.
+     * La liste de tous les hotels de la base de donnï¿½es.
      */
     private static Hotel[] hotels = {
             new Hotel("Hotel Latin", "Quartier latin", "Paris", 3),
             new Hotel("Hotel Etoile", "Place de l'Etoile", "Paris", 4),
             new Hotel("Hotel Vendome", "Place Vendome", "Paris", 5),
             new Hotel("Hotel Hilton", "Trafalgar Square", "Londres", 4),
-            new Hotel("Hotel Ibis", "The City", "Londres", 3), };
+            new Hotel("Hotel Ibis", "The City", "Londres", 3), 
+            new Hotel("Hotel Formule 1", "The Squarre", "Tokyo", 4), 
+            new Hotel("Hotel 2 Passe", "The Street", "New-York", 2), 
+        };
 
     /**
-     * Retourne les hôtels dans une ville donnée.
+     * Retourne les hï¿½tels dans une ville donnï¿½e.
      * @param ville le nom de la ville
      * @return une liste d'objets Hotel
      */
@@ -54,7 +57,7 @@ public class HotelModel {
     }
 
     /**
-     * Retourne la liste des villes de la base de données qui ont un hôtel.
+     * Retourne la liste des villes de la base de donnï¿½es qui ont un hï¿½tel.
      * @return une liste des noms de villes
      */
     public String[] trouveVillesDiponibles() {

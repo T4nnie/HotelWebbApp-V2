@@ -52,7 +52,7 @@ public class HotelModelTest extends TestCase {
 	public void testTrouveVillesDiponibles() {
 		HotelModel trouveur = new HotelModel();
 		String[] villes = trouveur.trouveVillesDiponibles();
-		assertEquals(villes.length, 2);
+		assertEquals(villes.length, 4);
 	}
 
 }
